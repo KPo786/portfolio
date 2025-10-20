@@ -1,0 +1,264 @@
+html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishin Poonsamy - Product & Business Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .hero-bg {
+            background-color: #1a1a1a;
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+        }
+
+        .magazine-title {
+            font-weight: 900;
+            letter-spacing: -0.05em;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .gallery-img {
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="hero-bg text-white">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">KP.</div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:text-blue-300 transition-colors">About</a>
+                <a href="#projects" class="hover:text-blue-300 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-blue-300 transition-colors">Skills</a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Contact</a>
+            </div>
+             <button id="mobile-menu-button" class="md:hidden p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block hover:text-blue-300 transition-colors">About</a>
+            <a href="#projects" class="block hover:text-blue-300 transition-colors">Projects</a>
+            <a href="#skills" class="block hover:text-blue-300 transition-colors">Skills</a>
+            <a href="#contact" class="block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors text-center">Contact</a>
+        </div>
+
+
+        <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+            <h1 class="text-5xl md:text-8xl magazine-title">KRISHIN POONSAMY</h1>
+            <p class="text-xl md:text-3xl mt-4 text-blue-300">Product & Business Analyst</p>
+            <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
+                Simplifying life through design and technology. Passionate about advancing business success through innovative solutions.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-12 items-center">
+                    <div class="md:col-span-1">
+                         <h2 class="text-4xl font-bold mb-4 section-title">About Me</h2>
+                         <p class="text-gray-600 text-lg">
+                            A full-stack analyst with over 15 years of experience in both traditional and Agile environments. Strong understanding of both Product and Systems Development Life Cycles.
+                        </p>
+                    </div>
+                    <div class="md:col-span-2 text-gray-700 space-y-6 text-base">
+                        <p>With a broad background working on User Experience, Digital Transformation, and Continuous Improvement projects, I have delivered UX-focused products across Banking, Insurance, and Retail industries.</p>
+                        <p>My expertise lies in translating user and business needs into user-friendly applications, streamlining operations, and enhancing customer experiences. I thrive on bridging the gap between design, technology, and business to create impactful solutions.</p>
+                         <div class="flex flex-wrap gap-4 mt-6">
+                            <span class="bg-gray-200 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Retail Banking</span>
+                            <span class="bg-gray-200 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Health Insurance</span>
+                            <span class="bg-gray-200 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Long Term Insurance</span>
+                             <span class="bg-gray-200 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Loyalty & Rewards</span>
+                             <span class="bg-gray-200 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Luxury Retail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-16 section-title">Project Showcase</h2>
+
+                <div class="space-y-24">
+                    <!-- Project 1: Carnival Cruise Line -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-5 gap-8 items-center p-8">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold">Carnival Cruise Line - carnival.com Revamp</h3>
+                            <p class="text-sm text-gray-500 mb-4">Client: Carnival Cruise Line | Role: UI/UX Analyst</p>
+                            <p class="text-gray-600 mb-4">A transformation project to enhance the user experience on the Carnival.com website. My role involved reviewing design system components in Figma, performing design QA, and conducting user research, which led to improved design consistency and usability.</p>
+                            <span class="text-blue-600 font-semibold">Outcome:</span>
+                            <p class="text-gray-700 italic">Improved design consistency, usability, and collaboration between design and development teams.</p>
+                        </div>
+                         <div class="md:col-span-3 grid grid-cols-2 gap-4">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/baa772e3-238d-4f18-ad1d-72e7379f88c6" alt="Carnival Project Screenshot 1" class="rounded-lg shadow-md gallery-img w-full h-auto object-cover">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/87504068-d061-464a-a1ad-47124f114674" alt="Carnival Project Screenshot 2" class="rounded-lg shadow-md gallery-img w-full h-auto object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Liberty Corporate -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-5 gap-8 items-center p-8">
+                         <div class="md:col-span-3 grid grid-cols-2 gap-4">
+                             <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/5b507bfa-c50d-4951-b0e7-76b4a24f0c40" alt="Liberty Project Screenshot 1" class="rounded-lg shadow-md gallery-img w-full h-auto object-cover">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/8404a600-ca2e-4b65-9851-92f7e77a4141" alt="Liberty Project Screenshot 2" class="rounded-lg shadow-md gallery-img w-full h-auto object-cover">
+                        </div>
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold">Liberty Corporate - Single Service Platform</h3>
+                            <p class="text-sm text-gray-500 mb-4">Client: Liberty Corporate | Role: Product Analyst</p>
+                            <p class="text-gray-600 mb-4">This project aimed to enhance customer experience for members, employers, and financial advisors through a unified web app. I conducted requirements analysis, UX design, delivered mockups, and aligned stakeholders to improve usability.</p>
+                             <span class="text-blue-600 font-semibold">Outcome:</span>
+                             <p class="text-gray-700 italic">Increased customer satisfaction, improved digital adoption, and achieved cost savings through negotiated platform deals.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Capitec Bank - Interstellar -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-5 gap-8 items-center p-8">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold">Capitec Bank - Interstellar</h3>
+                            <p class="text-sm text-gray-500 mb-4">Client: Capitec Bank | Role: Product Owner</p>
+                            <p class="text-gray-600 mb-4">I led the re-engineering of a legacy file transmission system for high-volume payment transactions. My responsibilities included analyzing workflows, redesigning the UI, managing the backlog, and leading sprints for implementation.</p>
+                             <span class="text-blue-600 font-semibold">Outcome:</span>
+                             <p class="text-gray-700 italic">Streamlined payment operations, reduced licensing costs, and delivered a modernized, user-friendly system.</p>
+                        </div>
+                         <div class="md:col-span-3 grid grid-cols-2 gap-4">
+                             <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/3305a415-f5b9-4a49-93e1-31405e3f3607" alt="Interstellar Project Screenshot 1" class="rounded-lg shadow-md gallery-img w-full h-auto object-cover">
+                             <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/a4b277f9-8664-42eb-82b4-e350d249f648" alt="Interstellar Project Screenshot 2" class="rounded-lg shadow-md gallery-img w-full h-auto object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Capitec Bank - Rapid Payments (PayShap) -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-5 gap-8 items-center p-8">
+                         <div class="md:col-span-3 grid grid-cols-2 gap-4">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/9b7e7ab4-282e-4b47-b844-3d02b851b4c9" alt="Rapid Payments Screenshot 1" class="rounded-lg shadow-md gallery-img">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/f9fd53e4-de7f-4cc3-94c6-2c5e7b5791c5" alt="Rapid Payments Screenshot 2" class="rounded-lg shadow-md gallery-img">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/422204aa-5735-4272-a720-d41fd848d53b" alt="Rapid Payments Screenshot 3" class="rounded-lg shadow-md gallery-img">
+                            <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903921508/17f6927a-a5f1-432d-96f0-d01072d63cc6" alt="Rapid Payments Screenshot 4" class="rounded-lg shadow-md gallery-img">
+                        </div>
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold">Capitec Bank - Rapid Payments (PayShap)</h3>
+                            <p class="text-sm text-gray-500 mb-4">Client: Capitec Bank | Role: Product Analyst | Scrum Master</p>
+                            <p class="text-gray-600 mb-4">This proof-of-concept project was for South Africa’s new immediate payment channel under BankServAfrica. I represented Capitec at industry design sessions, documented requirements, and delivered mockups and integration documentation.</p>
+                             <span class="text-blue-600 font-semibold">Outcome:</span>
+                            <p class="text-gray-700 italic">Demonstrated feasibility of real-time payments, supporting future implementation across the SA banking sector.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-16 section-title">Skills & Toolkit</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-semibold">Core Skills</h3>
+                         <ul class="text-gray-600">
+                             <li>Product Analysis</li>
+                             <li>UX Analysis & Design</li>
+                             <li>Process Analysis</li>
+                             <li>UX Research</li>
+                             <li>Data Analysis</li>
+                             <li>Business Analysis</li>
+                         </ul>
+                    </div>
+                     <div class="space-y-2">
+                        <h3 class="text-xl font-semibold">Management</h3>
+                         <ul class="text-gray-600">
+                             <li>Project Management</li>
+                             <li>SCRUM Master</li>
+                             <li>Agile Methodologies</li>
+                             <li>Stakeholder Alignment</li>
+                         </ul>
+                    </div>
+                     <div class="space-y-2">
+                        <h3 class="text-xl font-semibold">Design & Dev</h3>
+                         <ul class="text-gray-600">
+                             <li>Figma</li>
+                             <li>Balsamiq</li>
+                             <li>Miro</li>
+                             <li>Python</li>
+                             <li>HTML/CSS</li>
+                             <li>SQL</li>
+                         </ul>
+                    </div>
+                     <div class="space-y-2">
+                        <h3 class="text-xl font-semibold">Project Tools</h3>
+                         <ul class="text-gray-600">
+                             <li>JIRA & Confluence</li>
+                             <li>MS Azure DevOps</li>
+                             <li>Asana</li>
+                             <li>PowerBI</li>
+                             <li>MS Visio</li>
+                             <li>Storybook</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+             <h2 class="text-4xl font-bold mb-4">Let's Create Something That Makes Life Simpler</h2>
+             <p class="text-lg text-gray-300 mb-8">Open to Remote / Hybrid Roles, and available for travel.</p>
+             <div class="flex justify-center items-center space-x-8 mb-8">
+                 <a href="mailto:krishinp@gmail.com" class="hover:text-blue-300 transition-colors text-lg">📧 krishinp@gmail.com</a>
+                 <a href="tel:+27723096454" class="hover:text-blue-300 transition-colors text-lg">📞 +27 72 309 6454</a>
+                 <a href="https://www.linkedin.com/in/krishinpoonsamy/" target="_blank" class="hover:text-blue-300 transition-colors text-lg">
+                    <svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                    LinkedIn
+                 </a>
+             </div>
+             <p class="text-gray-500">&copy; 2025 Krishin Poonsamy. Cape Town, South Africa.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
